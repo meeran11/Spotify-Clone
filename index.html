@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify Logo">Spotify</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Songs List</h1>
+        <div class="songList">
+            <div>
+                <div class="songItem">
+                    <img src="1.jpg" alt="Song 1">
+                    <span>Legion</span>
+                    <div class="songListPlay">
+                        <span id="time0" class="timestamp">05:34</span>
+                        <i id="0" class="fa-solid fa-circle-play songItemPlay"></i>
+                    </div>
+
+
+                </div>
+                <div class="songItem">
+                    <img src="2.jpg" alt="Song 2">
+                    <span>Trap</span>
+                    <div class="songListPlay">
+                        <span id="time1" class="timestamp">05:34</span>
+                        <i id="1" class="fa-solid fa-circle-play songItemPlay"></i>
+                    </div>
+
+
+                </div>
+                <div class="songItem">
+                    <img src="3.jpg" alt="Song 3">
+                    <span>They Mad</span>
+                    <div class="songListPlay">
+                        <span id="time2" class="timestamp">05:34</span>
+                        <i id="2" class="fa-solid fa-circle-play songItemPlay"></i>
+                    </div>
+
+
+                </div>
+                <div class="songItem">
+                    <img src="4.jpg" alt="Song 4">
+                    <span>Plug Walk</span>
+                    <div class="songListPlay">
+                        <span id="time3" class="timestamp">05:34</span>
+                        <i id="3" class="fa-solid fa-circle-play songItemPlay"></i>
+                    </div>
+
+
+                </div>
+                <div class="songItem">
+                    <img src="5.jpg" alt="Song 5">
+                    <span>Name</span>
+                    <div class="songListPlay">
+                        <span id="time4" class="timestamp">05:34</span>
+                        <i id="4" class="fa-solid fa-circle-play songItemPlay"></i>
+                    </div>
+
+
+                </div>
+                <div class="songItem">
+                    <img src="6.jpg" alt="Song 6">
+                    <span>Safety Dance</span>
+                    <div class="songListPlay">
+                        <span id="time5" class="timestamp">05:34</span>
+                        <i id="5" class="fa-solid fa-circle-play songItemPlay"></i>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="songBanner"></div>
+
+    </div>
+
+    <div class="bottom">
+        <input type="range" id="myProgressBar" value="0" min="0" max="100">
+        <div class="icons">
+            <i class="fa-solid  fa-2x fa-backward-step" id="prev"></i>
+            <i class="fa-solid  fa-2x fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid  fa-2x fa-forward-step" id="next"></i>
+        </div>
+        <div class="songInfo"><img src="playing.gif" alt="gif" id="gif"><span id="name"></span></div>
+    </div>
+    <script src="https://kit.fontawesome.com/e1c08a17cd.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

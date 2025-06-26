@@ -1,0 +1,239 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(2, 56, 26, 1) 100%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    overflow-x: hidden;
+    color: white;
+}
+
+/* Navigation Bar */
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 8vh;
+    background-color: black;
+    color: white;
+    padding: 0 4vw;
+    font-size: 1.8vh;
+}
+
+nav ul li {
+    padding: 2vh 2vw;
+    cursor: pointer;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 2vh;
+}
+
+.brand img {
+    width: 5vh;
+    padding: 0 1vh;
+}
+
+/* Main Content Container */
+.container {
+    min-height: 65vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 2vh auto;
+    width: 90vw;
+    max-width: 1200px;
+    background-color: black;
+    border-radius: 2vh;
+    padding: 2vh 2vw;
+    background-image: url('bg.jpg');
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Song List */
+.songList > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0vh;
+}
+
+/* Bottom Player */
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1vh;
+    margin-bottom: 2vh;
+}
+
+#myProgressBar {
+    width: 80vw;
+    height: 1.5vh;
+}
+
+/* Icons */
+i {
+    color: white;
+    cursor: pointer;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: 2.5vh;
+}
+
+/* Song Info */
+.songInfo {
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10vw;
+    gap: 1vh;
+}
+
+.songInfo img {
+    width: 6vh;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-right: 1vh;
+}
+
+/* Headings */
+h1 {
+    font-size: 3vh;
+    font-weight: normal;
+    margin-bottom: 2vh;
+}
+
+/* Song Items */
+.songItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    border-radius: 5vh;
+    width: 40vw;
+    min-width: 40vw;
+    height: 7vh;
+    padding: 0 2vw;
+    margin: 2vh 0;
+    font-size: 1.8vh;
+}
+
+.songItem img {
+    height: 5vh;
+    width: 5vh;
+    margin: 0;
+    border-radius: 50%;
+}
+
+.songItem i {
+    color: black;
+    font-weight: bold;
+    margin-left: 1vw;
+    font-size: 2vh;
+}
+
+/* Song List Play Section */
+.songListPlay {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+/* Timestamp */
+.timestamp {
+    margin: 0;
+    font-size: 1.7vh;
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 9vh;
+    background-color: black;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        height: auto;
+        padding: 1vh 2vw;
+    }
+
+    .songItem {
+        width: 90vw;
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        padding: 2vh;
+    }
+
+    .container {
+        background-size: cover;
+        background-position: center;
+        padding: 2vh 3vw;
+    }
+
+    .songInfo {
+        position: static;
+        margin-left: 0;
+        margin-top: 1vh;
+        flex-direction: column;
+        transform: none;
+    }
+
+    .songInfo img {
+        width: 5vh;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2.5vh;
+    }
+
+    .bottom {
+        height: auto;
+        padding: 2vh 0;
+    }
+
+    i {
+        font-size: 3vh;
+    }
+}
